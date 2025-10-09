@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display</title>
+
+        <style>
+            p{
+                background-color: rgb(30, 195, 112);
+                padding: 10px;
+            }
+
+            span{
+                background-color: #8d72c2;
+                color: black;
+                padding: 10px;
+            
+            }
+
+            p.SZB1 {display: none;}
+            p.SZB2 {display: inline;}
+            p.SZB3 {display: block;}
+            P.SZB4 {display: inline-block;}
+            p.SZB5 {display: flex;}
+            p.SZB6 {display: -moz-popup;}
+        </style>
+    </head>
+
+    <body>
+        <h1>Megjelenítési tulajdonság</h1>
+
+        <h2>display: none:</h2>
+        <p class="SZB1">
+            <span>PTI BSc 1</span>
+            <span>PTI BSc 2</span>
+            <span>PTI BSc 3</span>
+        </p>
+
+        <h2>display: inline:</h2>
+        <p class="SZB2">
+            <span>PTI BSc 1</span>
+            <span>PTI BSc 2</span>
+            <span>PTI BSc 3</span>
+        </p>
+
+        <h2>display: block:</h2>
+        <p class="SZB3">
+            <span>PTI BSc 1</span>
+            <span>PTI BSc 2</span>
+            <span>PTI BSc 3</span>
+        </p>
+
+        <h2>display: inline-block:</h2>
+        <p class="SZB4">
+            <span>PTI BSc 1</span>
+            <span>PTI BSc 2</span>
+            <span>PTI BSc 3</span>
+        </p>
+
+        <h2>display: flex:</h2>
+        <p class="SZB5">
+            <span>PTI BSc 1</span>
+            <span>PTI BSc 2</span>
+            <span>PTI BSc 3</span>
+        </p>
+
+        Teszt
+        <h2>display: moz-popup:</h2>
+        <p class="SZB6">
+            <span>PTI BSc 1</span>
+            <span>PTI BSc 2</span>
+            <span>PTI BSc 3</span>
+        </p>
+    </body>
+</html>
