@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS-Text dekor</title>
+
+        <style>
+            body{background-color: #0ecd9d;}
+
+            #para1{
+                text-align: left;
+                color: rgb(25, 0, 255);
+                font-size: 20pt;
+            }
+
+            a {text-decoration: none;}
+
+            .decorated {text-decoration: underline dotted rgb(255, 0, 0);}
+        </style>
+    </head>
+
+    <body>
+
+        <h1>CSS - text-decoration</h1>
+
+        <div style="width: 600px;">
+
+        <p id="para1"> <a href="https://www.unithe.hu" target="_blank">Kattints ide az <i>unithe.hu</i>  weblap megnyitásához!</a></p>
+        
+        <div></div>
+        <p id="para1" class="decorated">Ez egy piros pontozott vonallal aláhúzott szöveg</p>
+        
+        </div>
+    </body>
+</html>
