@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Táblázat készítés, formázás</title>
+    </head>
+
+    <body>
+        <h1>Táblázat készítés, formázás</h1>
+
+        <table border="1" class="table">
+            <caption>
+                <h2>Táblázat elemi</h2>
+            </caption>
+
+            <tr style="font-size: 14pt; background-color: #c0c0c0;">
+                <th><em>1. oszlop fejléc</em></th>
+                <th><em>2. oszlop fejléc</em></th>
+                <th><em>3. oszlop fejléc</em></th>
+            </tr>
+
+            <tr class="red">
+                <td>1. sor 1. elem</td>
+                <td style="text-align: right; vertical-align: top;"> 1. sor 2. elem </td>
+                <td style="vertical-align: bottom; text-align: center;"> 1. sor 3. elem</td>
+            </tr>
+            <tr class="baige">
+                <td>2. sor 1. elem</td>
+                <td class="scroll"><div class="scroll">2. sor 2. elem Az ember ősidők óta használ különböző eszközöket, ha úgy tetszik, számológépeket fölfi javai számbavételéhez, a mennyiségekkel végzett kalkulosok gyorsabb, pontosabb, kevesebb emberi munkát igénylő végrehajtáshoz. </div></td>
+                <td class="center">2. sor 3. elem</td>
+            </tr>
+            <tr class="baige">
+                <td>3. sor 1. elem</td>
+                <td class="magenta">3. sor 2. elem</td>
+                <td>3. sor 3. elem</td>
+            </tr>
+        </table>
+
+            <link rel="stylesheet" href="tidf25_table.css">
+    </body>
+</html>
