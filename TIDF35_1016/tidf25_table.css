@@ -4,6 +4,8 @@
     border-collapse: collapse;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    text-align: center;
+    background-color: bisque;
 
 }
 
@@ -24,6 +26,32 @@
 
 .magenta{
     background-color: #ffff00
+}
+.green{
+    background-color: greenyellow;
+}
+
+.mat{
+    background-color: red;
+}
+
+.kut{
+    background-color: aqua;
+}
+
+.english{
+    background-color: blue;
+}
+.logik{
+    background-color: chartreuse;
+}
+
+.arch{
+    background-color: orange;
+}
+
+.inf{
+    background-color: violet;
 }
 
 .scroll{
