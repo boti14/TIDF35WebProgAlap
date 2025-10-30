@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="hu">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feldolgozo1</title>
 </head>
 <body>
-    <?php>
+    <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
@@ -33,33 +35,33 @@
             }
             echo "</ul></div>";
 
-        } eles {
+        } else {
 
             //Adatok táblázatos megjelenítése
             echo "<table>";
-                echo "tr>td>Név:</td><td>$nev</td></tr>";
-                echo "tr>td>PIN kód:</td><td>$pinv</td></tr>";
-                echo "tr>td>Kedvenc gyümölcs:</td><td>$fav_fruit</td></tr>";
-                echo "tr>td>Életkor:</td><td>$age</td></tr>";
-                echo "tr>td>Lábméret:</td><td>$feet_size</td></tr>";
-                echo "tr>td>Önbizalom:</td><td>$confidence</td></tr>";
+                echo "<tr><td>Név:</td><td>$nev</td></tr>";
+                echo "<tr><td>PIN kód:</td><td>$pin</td></tr>";
+                echo "<tr><td>Kedvenc gyümölcs:</td><td>$fav_fruit</td></tr>";
+                echo "<tr><td>Életkor:</td><td>$age</td></tr>";
+                echo "<tr><td>Lábméret:</td><td>$feet_size</td></tr>";
+                echo "<tr><td>Önbizalom:</td><td>$confidence</td></tr>";
 
             echo "</table>";
 
             //fájl mentése
 
-            $sor = data("Y-m-d H:i:s") . " | " .
+            $sor = date("Y-m-d H:i:s") . " | " .
                     "Név: $nev | " .
                     "PIN: $pin | " .
                     "Kedvenc gyümölcs: $fav_fruit | " .
                     "Életkor: $age | " .
                     "Lábméret: $feet_size | " .
-                    "Önbizalom: $confidence" . PHPH_EOL;
+                    "Önbizalom: $confidence" . PHP_EOL;
 
             $fajl = "tidf35_adatok.txt";
 
             if (file_put_contents($fajl, $sor, FILE_APPEND | LOCK_EX)) {
-                echo "<p class='success'>✅Az adatok sikeresen elmentve a <strong>$</strong> fájlba.</p>";
+                echo "<p class='success'>✅Az adatok sikeresen elmentve a <strong> $fajl </strong> fájlba.</p>";
             } else {
                 echo "<p class='error'>🔺 Hiba történt az adatok mentésekor!</p>";
             }
