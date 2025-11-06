@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            display: block;
+            width: fit-content;
+            border-bottom: 4px solid gray;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        button{
+                width: 2.5rem;
+                height: 3rem;
+                line-height: 4;
+                overflow: hidden;
+
+                border: none;
+                border-radius: 0.5rem;
+                background-color: #dbf;
+                box-shadow: 0 0 0 0.125rem #000000bb, inset 0 0 0.25rem 0 #ffffffbb;
+
+            }
+
+        button:hover{
+            background-color: rgb(99, 158, 217);
+        }
+    </style>
+
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Audio zene, hang lejátszása_TIDF35</h1>
+        </header>
+
+        <main>
+            <audio id="audio" src="jazzy.mp3" controls></audio>
+            <audio id="yes" src="yes.mp3" ></audio>
+            <audio id="no" src="no.mp3" ></audio>
+        
+
+        <script>
+            const audio = document.getElementById('audio');
+            const yes = document.getElementById('yes');
+            const no = document.getElementById('no');
+        </script>
+
+        <div class="buttons">
+
+            <p>
+                <button id="startstop">Lejátszás / Szünet</button>&nbsp;&nbsp;&nbsp;
+                <button id="yes" onclick="yes.play()">Pozitív</button>
+                <button id="no" onclick="no.play()">Negatív</button>
+            </p>
+            <p>
+                <button onclick="audio.volume = 0">Néma</button>
+                <button onclick="audio.volume = 0.5">Halk</button>
+                <button onclick="audio.volume = 1">Hangos</button>
+                &nbsp;&nbsp;&nbsp;
+                <button onclick="audio.playbackRate = 0.25">Nagyon lassú</button>
+                <button onclick="audio.playbackRate = 0.5">Lassú</button>
+                <button onclick="audio.playbackRate = 1">Normál</button>
+                <button onclick="audio.playbackRate = 2">Gyors</button>
+                <button onclick="audio.playbackRate = 4">Nagyon gyors</button>
+            </p>
+            <p>
+                <button onclick="alert(audio.ended)">Befejeződött-e</button>
+                <button onclick="alert(audio.duration)">Audió hossza (mp)</button>
+                <button onclick="alert(audio.currrentTime)">Jelenlegi pozíció</button>
+                <button onclick="audio.currrentTime = 90">Ugrás másfél perchez</button>
+            </p>
+
+        </div>
+        
+        </main>
+
+        <footer>
+            <h3>Forrás: </h3>
+            <p><a href="https://www.w3schools.com/html/html5_audio.asp">https:!!www.w3schools.com/html/html5_audio.asp</a></p>
+        </footer>
+
+        <script>
+            document.getElementById('startstop').addEventListener('click', () => {
+                if (audio.paused){
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+            audio.addEventListener('ended', () => {
+                alert('VÉGE');
+            })
+        </script>
+    </body>
+</html>
