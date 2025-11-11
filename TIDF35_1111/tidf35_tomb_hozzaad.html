@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tömb elem hozzáadása, tömb hossz meghatározása</title>
+    </head>
+
+    <body>
+        <h3>Tömb elem hozzáadása, tömb hossz meghatározása</h3>
+
+        <stronbg>Előtte:</stronbg> <p id="tidf35"></p>
+        <stronbg>Utána:</stronbg> <p id="tidf35_1"></p>
+
+        <strong>Tömb hossza: </strong> <p id="tidf35_2"></p>
+
+        <button onclick="hozzaad()">Új érték hozzáadása</button>
+        <button onclick="hossz()">Tömb hossza</button>
+
+        <script>
+            
+            let prognyelvek = ["HTML", "CSS3", "JS"];
+            document.getElementById("tidf35").innerHTML = prognyelvek;
+            
+            function hozzaad(){
+                prognyelvek.push("C nyelv"); //itt adunk hozzá
+                document.getElementById("tidf35_1").innerHTML = prognyelvek;
+            }
+
+            function hossz(){  //itt határozzuk meg a tömb hosszát
+                document.getElementById("tidf35_2").innerHTML = prognyelvek.length;
+            }
+
+        </script>
+
+    </body>
+</html>
