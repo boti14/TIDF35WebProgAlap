@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weblap készítése</title>
+        <link rel="stylesheet" href="">
+
+        <style>
+            body{
+                background-image: url(kepek/hatter.jpg);
+                font-family: Tahoma, sans-serif;
+            }
+
+            header{
+                width: 100%;
+            }
+
+            .centered{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            footer{
+                position: fixed;
+                bottom: 20px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            td{
+                font-size: 24pt;
+                text-align: center;
+                width: 33%;
+            }
+
+            .content{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+
+            }
+
+            .v_center{
+                margin-left: 30%;
+                margin-right: 30%;
+            }
+
+            table{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            section, footer{
+                color: white;
+                align-items: center;
+            }
+
+            a:link{
+                color: white;
+                font-weight: bold;
+            }
+
+            a:visited{
+                color: lightcyan;
+            }
+
+            a:hover{
+                color: lightcyan;
+            }
+
+            a:active{
+                color: lightcyan;
+            }
+
+            v_center{
+                align-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <a href="kezdolap.html"><img src="kepek/the.png" alt="THE" class="centered"></a>
+                <table width="100%">
+                    <tr>
+                        <td><a href="logika.html">Logika alapjai</a></td>
+                        <td><a href="webprog.html">Webprogramozás alapjai</a></td>
+                        <td><a href="kutatas.html">Kutatás- és tanulás módszrertan</a></td>
+                    </tr>
+                </table>
+            </header>
+
+            <section>
+                <br><br>
+                
+                <video class="v_center" src="szb_video1.mp4" id="video" autoplay="false" controls width="600" align="center"></video>
+                
+                <p style="margin-top: 60px; margin-bottom: 40px;"><b>Üdvözlöm a honlapon!</b></p>
+                <p style="margin-bottom: 40px;">Ezt a weblapot A Webprogramozás alapjai kurzuson készítettem el</p>
+                <br><br>
+                <div><b>Forrás:</b></div>
+                <div>W3 schools</div>
+            </section>
+        </div>
+
+        <footer>SZB, TIDF35, 2025</footer>
+    </body>
+</html>
