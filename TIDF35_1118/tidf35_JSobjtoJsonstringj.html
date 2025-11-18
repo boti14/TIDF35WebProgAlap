@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON - Make</title>
+    </head>
+
+    <body>
+        <h3>JSON fájl készítése - JS-ben</h3>
+        <div class="jsonString" style="font-family: monospace;"></div>
+ 
+    
+    </body>
+
+    <script>
+            const jsonObjSZB = {
+                Egyetem: "Tokaj Hegyalja Egyetem",
+                Város: "Sárospatak",
+                Irányítószám: "3950",
+                Név: "Szendrei Botond"
+            }
+
+            const jsonString = JSON.stringify(jsonObjSZB, null, 4);
+
+            const jsonStringDiv = document.querySelector('.jsonString');
+            jsonStringDiv.innerHTML = jsonString;
+
+        </script>
+</html>
