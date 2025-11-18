@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weblap készítése</title>
+        <link rel="stylesheet" href="">
+
+        <style>
+            body{
+                background-image: url(kepek/h.png);
+                font-family: Tahoma, sans-serif;
+            }
+
+            header{
+                width: 100%;
+            }
+            
+            .wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 100px;
+                
+            }
+
+            *{
+                box-sizing: border-box;
+
+            }
+
+            .wrapper{
+                border: 0px solid red;
+                border-radius: 1px;
+                background-color: none;
+
+            }
+
+            .wrapper > div{
+                border: 0.5px solid rgb(12, 138, 241);
+                border-radius: 0px;
+                background-color: #0c56f5;
+                padding: 2em;
+                color: #18daa0;
+                text-align: center;
+            }
+
+            
+            
+            .centered{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            footer{
+                position: fixed;
+                bottom: 20px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            td{
+                font-size: 15pt;
+                text-align: center;
+                width: 35%;
+
+            }
+
+            .content{
+                display: block;
+                mar
+                width: 80%;
+
+            }
+
+            table{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            section, footer{
+                color: white;
+            }
+
+            a:link{
+                color: rgb(167, 204, 81);
+                font-weight: bolder;
+                
+            }
+
+            a:visited{
+                color: rgb(61, 231, 146);
+            }
+
+            a:hover{
+                color: rgb(31, 126, 216);
+            }
+
+            a:active{
+                color: lightcyan;
+            }
+
+            .gomb{
+                background-color: cornflowerblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <a href="index.html"><img src="kepek/the.png" alt="THE" class="centered"></a>
+                <table width="100%">
+                    <tr>
+                        <td class="gomb"><a href="adatbazis.html">Adatbázisrendszerek</a></td>
+                        <td class="gomb"><a href="webprog.html">Webprogramozás alapjai</a></td>
+                        <td class="gomb"><a href="webxml.html">Webes adatkezelő körny.</a></td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+
+                <div class="wrapper">
+                    <div>Adatbázis</div>
+                    <div>Webprogramozás alapjai</div>
+                    <div>Webes adatkezelő körny.</div>
+                </div>
+            </header>
+
+            <section>
+                
+                <p style="margin-top: 60px; margin-bottom: 40px;"><b>Üdvözlöm a honlapon!</b></p>
+                <p style="margin-bottom: 1000px;">Ezt a weblapot A Webprogramozás alapjai kurzuson készítettem el</p>
+                
+                <div><b>Forrás:</b></div>
+                <div>W3 schools</div>
+            </section>
+        </div>
+
+        <footer>SZB, TIDF35, 2025</footer>
+    </body>
+</html>
