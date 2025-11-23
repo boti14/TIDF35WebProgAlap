@@ -2,26 +2,92 @@
     "TIDF35_orarend":{
         "ora": [
             {
-                "targy": "Szoftvertesztelés"
+                "targy": "Programozás alapjai"
                 "idopont": {
                     "nap": "hétfő",
-                    "tol": 10,
-                    "ig": 12
+                    "tol": 8:00,
+                    "ig": 11:15
                 },
-                "hekyszin": "Inf. 103",
-                "oktato": "Dr. Hornyák Olivér",
-                "szak": "G3BIM"
+                "hekyszin": "Online",
+                "oktato": "Gégény Dávid",
+                "szak": "1NPTI"
             },
             {
-                "targy": "Szoftvertesztelés"
+                "targy": "Webprogramozás alapjai"
                 "idopont": {
-                    "nap": "hétfő",
-                    "tol": 10,
-                    "ig": 12
+                    "nap": "kedd, csütörtök",
+                    "tol": 8:00,
+                    "ig": 9:35
                 },
-                "hekyszin": "Inf. 103",
-                "oktato": "Dr. Hornyák Olivér",
-                "szak": "G3BIM"
+                "hekyszin": "Inf. 124",
+                "oktato": "Dr. Bednarik László",
+                "szak": "1NPTI"
+            },
+            {
+                "targy": "Diszkrét matematika és lineáris algebra"
+                "idopont": {
+                    "nap": "kedd",
+                    "tol": 10:00,
+                    "ig": 12:55
+                },
+                "hekyszin": "Terem. 117",
+                "oktato": "Dr. Földvári Attila József",
+                "szak": "1NPTI"
+            },
+            {
+                "targy": "Kutatás- és tanulásmódszertan"
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": 13:00,
+                    "ig": 14:35
+                },
+                "hekyszin": "Terem. 111",
+                "oktato": "Dr. Kökényesi Nikoletta Judit",
+                "szak": "SZNPTI"
+            },
+            {
+                "targy": "Idegen nyelv I."
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": 15:15,
+                    "ig": 18:20
+                },
+                "hekyszin": "Terem. 111",
+                "oktato": "Kováts Imre Győző",
+                "szak": "1NCs + PTI"
+            },
+            {
+                "targy": "Számítógép architektúrák"
+                "idopont": {
+                    "nap": "csütörtök",
+                    "tol": 10:10,
+                    "ig": 11:15
+                },
+                "hekyszin": "Inf. 124",
+                "oktato": "Dr. Bednarik László",
+                "szak": "1NPTI"
+            },
+            {
+                "targy": "Az informatika logikai alapjai"
+                "idopont": {
+                    "nap": "csütörtök",
+                    "tol": 16:00,
+                    "ig": 19:10
+                },
+                "hekyszin": "Online",
+                "oktato": "Dr. Godó Zoltán Attila",
+                "szak": "1NPTILE"
+            },
+            {
+                "targy": "Bevezetés az informatikába"
+                "idopont": {
+                    "nap": "péntek",
+                    "tol": 13:30,
+                    "ig": 17:30
+                },
+                "hekyszin": "Online",
+                "oktato": "Janics Tamás",
+                "szak": "1NPTI"
             },
         ]
     }
