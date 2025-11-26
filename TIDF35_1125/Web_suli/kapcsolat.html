@@ -106,7 +106,7 @@
                         <td class="uniq"><a href="webprog.html">Webprogramozás alapjai</a></td>
                         <td><a href="kutatas.html">Kutatás- és tanulásmódszertan</a></td>
                         <td><a href="logika.html">Az informatika logikai alapjai</a></td>
-                        <td><a href="kapcsolat.html">Kapcsolat</a></td>
+                        <td class="uniq"><a href="kapcsolat.html">Kapcsolat</a></td>
                     </tr>
                     
                 </table>
@@ -115,41 +115,56 @@
 
                 <div style="display: inline-flex; width:100%; margin-top: 20px ;">
                     <div style="width: 100%; margin-left: 50px;">
-                        <h3>Webprogramozás alapjai</h3>
-                        <div>Oktató: Dr. Bednarik László</div>
-                        <div>Kredit: 3</div>
-                        <p><b>Tematika</b></p>
-
-                        <ul>
-                            <li>Verziókövető rendszerek. </li>
-                            <li>GitHub fiók létrehozása</li>
-                            <li>Webes alkalmazások elemei, felépítése Apache2, MySQL, Node.js konfigurálása</li>
-                            <li>HTML5 elemei, CSS3</li>
-                            <li>Szövegformázás, háttérkép beillesztése.</li>
-                            <li>Lista, linkek készítése</li>
-                            <li>Képek beillesztése és formázása</li>
-                            <li>Táblázatok készítése</li>
-                            <li>Űrlap készítése</li>
-                            <li>Mini weblap készítése</li>
-                            <li>JavaScript alapok I. JavaScript alapok II</li>
-                            <li>Audio, video, grafika beillesztése</li>
-                            <li>JSON. AJAX technológiák. jQuery</li>
-                            <li>ZH dolgozat</li>
-                            <li>Féléves feladat bemutatása/megvédése</li>
-                            <li>Értékelés</li>
-                            
-                            
-                        </ul>
+                        <h3>--------</h3>
+                        <div>-------------</div>
+                        <div>----------</div>
+                        <p><b>------------</b></p>
                     </div>
 
-                    <div style="width: 40%;">
-                        <img src="source/kepek/web.png" alt="DB-ábra" style="width: 100%; margin-top: 90px;">
-                    </div>
+                    <header>
+            
+        </header>
 
-                </div>
-                
-                
-                
+            <form action="urlap.php" target="_self" method="post" name="urlap" id="urlap">
+
+                <label for="nev">Név:
+                    <input type="text" id="nev" name="nev" required pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéióöőúüű]){4,}" title="Írd be a neved" placeholder="Írd be a neved" autofocus autocomplete="off">
+                </label>
+
+                <label for="pin">PIN kód:
+                    <input type="password" id="pin" name="pin" required pattern="[0-9]{4}" title="4 számjegyű PIN kód" placeholder="Írd be a PIN kódod">
+                </label>
+
+                <label for="fav_fruit">Kedvenc gyümölcs:
+                    <input list="gyumolcsok" id="fav_fruit" name="fav_fruit" placeholder="" title="Alma, Körte, Szőlő, Banán, Narancs">
+                    <datalist id="gyumolcsok">
+                        <option value="alma">Alma</option>
+                        <option value="körte">Körte</option>
+                        <option value="szőlő">Szőlá</option>
+                        <option value="banán">Banán</option>
+                        <option value="narancs">Narancs</option>
+                    </datalist>
+                </label>
+
+                <label for="age">Életkor:
+                    <input type="number" id="age" name="age" min="1" max="100" step="1" title="1 és 100 közötti érték" placeholder="">
+                </label>
+
+                <label for="feet_size">Lábméret:
+                    <input type="number" name="feet_size" id="feet_size" min="25" max="50" step="0.5" title="25 és 50 közötti érték" placeholder="">
+                </label>
+
+                <label for="confidence">Önbizalom:
+                    <input type="range" id="confidence" name="confidence" min="0" max="100" step="0.1" title="0 és 100 közötti érték">
+                </label>
+            </form>
+            <br>
+
+            <div class="sidebyside">
+                <input type="submit" value="Elküld" form="urlap">
+                <input type="submit" value="Elküld ellenőrzés nélkül" formnovalidate form="urlap">
+            </div>
+             
                 
             </section>
         </div>

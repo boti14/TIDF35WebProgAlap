@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Tömbökön belüli tömbök ciklusa</h1>
+
+        <div id="jsontidf35">
+
+        </div>
+        <script>
+            const SZBObj = {
+                "name": "Szendrei Botond",
+                "age": 20,
+                "cars": [
+                    {"name": "Toyota", "models": ["CHR", "Corolla", "Proace"]},
+                    {"name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"]},
+                    {"name": "BMW", "models": ["320", "X3", "X5"]},
+                    {"name": "Fiat", "models": ["500", "Panda", "Tipo"]},
+                ]
+            }
+
+            const jsontidf35 = document.getElementById('jsontidf35');
+
+            const h2 = document.createElement('h2');
+            h2.innerHTML = '<span><b>${SZBObj["name"]}</b></span> (${SZBObj["age"]})';
+            jsontidf35.appendChild(h2);
+
+            for(let i = 0; i < SZBObj["cars"].length; i++){
+                const
+            }
+
+        </script>
+    </body>
+</html>

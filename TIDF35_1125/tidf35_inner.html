@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>innerHTML</title>
+    </head>
+
+    <body>
+        <h3>innerHTML</h3>
+
+        <p id="tidf35_1">Ennek olvassa ki a tartalmát.</p>
+        <p id="tidf35_2">Ennek írja át a tartalmát.</p>
+
+        <button onclick="kiolvas()">Kiolvas</button>
+        <button onclick="atir()">Átír</button>
+
+        <script>
+
+        function kiolvas(){
+            alert(document.getElementById("tidf35_1").innerHTML);
+        }
+
+        function atir(){
+            document.getElementById("tidf35_2").innerHTML = "Átírja a tartalmat.";
+        }
+        
+        </script>
+    </body>
+</html>
