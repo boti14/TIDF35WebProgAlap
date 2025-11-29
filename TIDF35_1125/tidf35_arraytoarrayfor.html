@@ -28,11 +28,22 @@
             const jsontidf35 = document.getElementById('jsontidf35');
 
             const h2 = document.createElement('h2');
-            h2.innerHTML = '<span><b>${SZBObj["name"]}</b></span> (${SZBObj["age"]})';
+            h2.innerHTML = `<span><b>${SZBObj["name"]}</b></span> (${SZBObj["age"]})`;
             jsontidf35.appendChild(h2);
 
             for(let i = 0; i < SZBObj["cars"].length; i++){
-                const
+                const h3 = document.createElement('h3');
+                h3.innerHTML = `<span><b>${SZBObj["cars"][i]["name"]}</b></span>:`;
+                jsontidf35.appendChild(h3);
+
+                const ul = document.createElement('ul');
+                jsontidf35.appendChild(ul);
+
+                for(let j = 0; j < SZBObj["cars"][i]["models"].length; j++){
+                    const li = document.createElement('li');
+                    li.innerHTML = SZBObj["cars"][i]["models"][j];
+                    ul.appendChild(li);
+                }
             }
 
         </script>
