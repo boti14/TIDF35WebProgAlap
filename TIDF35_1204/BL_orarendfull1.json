@@ -1,0 +1,107 @@
+{
+  "ora": [
+    {
+      "targy": "Webprogramozás alapjai",
+      "idopont": {
+        "nap": "Kedd",
+        "tol": "08:00",
+        "ig": "09:35"
+      },
+      "helyszin": "Inf 124",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Programtervező informatikus",
+      "tipus": "Gyakorlat"
+    },
+    {
+      "targy": "Webprogramozás alapjai",
+      "idopont": {
+        "nap": "Csütörtök",
+        "tol": "08:00",
+        "ig": "09:35"
+      },
+      "helyszin": "Inf 124",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Programtervező informatikus",
+      "tipus": "Gyakorlat"
+    },
+    {
+      "targy": "Web programozás alapjai",
+      "idopont": {
+        "nap": "Hétfő",
+        "tol": "14:00",
+        "ig": "15:30"
+      },
+      "helyszin": "Inf/103",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Mérnökinformatikus",
+      "tipus": "Gyakorlat"
+    },
+    {
+      "targy": "Modern Adatbázis rendszerek",
+      "idopont": {
+        "nap": "Hétfő",
+        "tol": "15:30",
+        "ig": "17:00"
+      },
+      "helyszin": "Inf/103",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Mérnöinformatikus",
+      "tipus": "Gyakorlat"
+    },
+    {
+      "targy": "Adatkezelés XML környezetben",
+      "idopont": {
+        "nap": "Kedd",
+        "tol": "12:00",
+        "ig": "13:30"
+      },
+      "helyszin": "XXXII.ea",
+      "oktato": "Dr. Bednarik László",
+      "szak": "MI, PTI",
+      "tipus": "Elmélet"
+    },
+    {
+      "targy": "Adatkezelés XML környezetben",
+      "idopont": {
+        "nap": "Szerda",
+        "tol": "14:00",
+        "ig": "15:30"
+      },
+      "helyszin": "Inf/101",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Programtervező informatikus",
+      "tipus": "Gyakorlat"
+    },
+    {
+      "targy": "Adatkezelés XML környezetben",
+      "idopont": {
+        "nap": "Szerda",
+        "tol": "16.00",
+        "ig": "17:30"
+      },
+      "helyszin": "Inf/101",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Programtervező informatikus",
+      "tipus": "Gyakorlat"
+    }
+  ],
+
+  "cim":
+  {
+    "iranyitoszam": 3950,
+    "varos": "Sárospatak",
+    "utca": "Eötvös 7."
+  },
+
+  "telefonszam":
+  [
+    {
+      "tipus": "Vezetékes",
+      "szam": "0647 513-000"
+    },
+    {
+      "tipus": "Mobil",
+      "szam": "0670 555-4567"
+    }
+  ]
+}

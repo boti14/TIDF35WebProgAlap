@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random szám generálás</title>
+    </head>
+    <body>
+
+        <h2>Random szám generálás</h2>
+
+        <p id="tidf35"></p>
+
+        <h3>0 és 1 közötti szám generálása</h3>
+        <button onclick="document.getElementById('tidf35').innerHTML = Math.random();">Random szám generálása</button>
+
+        <h3>[0;10[közötti random szám generálása</h3>
+        <button onclick="document.getElementById('tidf35').innerHTML = Math.random()*10;">1-nél nagyobb random szám generálása</button>
+
+        <h3>[0; 99[ random generált szám</h3>
+        <button onclick="document.getElementById('tidf35').innerHTML = Math.random()*100;">1-nél nagyobb random szám generálása</button>
+
+        <h3>[0; x[ random generált szám</h3>
+        <button onclick="document.getElementById('tidf35').innerHTML = Math.random()*500+1;">0-tól x-ig random szám generálása</button>
+
+
+        
+    </body>
+</html>

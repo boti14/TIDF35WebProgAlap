@@ -1,0 +1,32 @@
+body
+{
+    margin: 2em;
+}
+
+header
+{
+    width: fit-content;
+}
+
+.paragraph
+{
+    font-weight: bold;
+    font-size: large;
+}
+
+#area
+{
+    width: 400px;
+    background-color: rgb(190, 197, 232);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+
+.func_btn
+{
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+

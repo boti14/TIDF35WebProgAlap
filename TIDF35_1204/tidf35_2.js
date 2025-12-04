@@ -22,9 +22,9 @@ $(document).ready(function()
 
             $("#area").append("<ul><br><br>THE, PTI Órarend 2025 ősz<br><br><br></ul>");
 
-            for (let i = 0; i < data.ora.length; i ++)
+            for ( let i = 0; i < data.ora.length; i ++)
             {
-                $("$area").append("<b>Tárgy:</b>&nbsp;" + data.ora[i].targy + "<br><br>");
+                $("#area").append("<b> Tárgy: </b> &nbsp;" + data.ora[i].targy + "<br><br>");
 
                 $("#area").append("<b>Időpont:</b>&nbsp;Nap:&nbsp;" + data.ora[i].idopont.nap + "<b>Tól:</b>&nbsp;" + data.ora[i].idopont.tol + "<b>Ig:</b>&nbsp;" + data.ora[i].idopont.ig + "<br><br>");
 
@@ -33,7 +33,7 @@ $(document).ready(function()
                 $("#area").append("<b>Oktató:</b>&nbsp;" + data.ora[i].oktato + "<br><br>");
                 $("#area").append("<b>Szak:</b>&nbsp;" + data.ora[i].szak + "<br><br>");
                 $("#area").append("<b>Típus:</b>&nbsp;" + data.ora[i].tipus + "<br><br>");
-                $("#area").append("<b>:</b>&nbsp;" + data.ora[i].oktato + "<br><br>");
+               
                 $("#area").append("<hr>");
 
             }
