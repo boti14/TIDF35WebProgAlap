@@ -2,18 +2,18 @@
     "TIDF35_orarend":{
         "ora": [
             {
-                "targy": "Programozás alapjai"
+                "targy": "Programozás alapjai",
                 "idopont": {
                     "nap": "hétfő",
-                    "tol": 8:00,
-                    "ig": 11:15
+                    "tol": "8:00",
+                    "ig": "11:15"
                 },
                 "hekyszin": "Online",
                 "oktato": "Gégény Dávid",
                 "szak": "1NPTI"
             },
             {
-                "targy": "Webprogramozás alapjai"
+                "targy": "Webprogramozás alapjai",
                 "idopont": {
                     "nap": "kedd, csütörtök",
                     "tol": 8:00,
@@ -24,7 +24,7 @@
                 "szak": "1NPTI"
             },
             {
-                "targy": "Diszkrét matematika és lineáris algebra"
+                "targy": "Diszkrét matematika és lineáris algebra",
                 "idopont": {
                     "nap": "kedd",
                     "tol": 10:00,
@@ -35,7 +35,7 @@
                 "szak": "1NPTI"
             },
             {
-                "targy": "Kutatás- és tanulásmódszertan"
+                "targy": "Kutatás- és tanulásmódszertan",
                 "idopont": {
                     "nap": "szerda",
                     "tol": 13:00,
@@ -46,7 +46,7 @@
                 "szak": "SZNPTI"
             },
             {
-                "targy": "Idegen nyelv I."
+                "targy": "Idegen nyelv I.",
                 "idopont": {
                     "nap": "szerda",
                     "tol": 15:15,
@@ -57,7 +57,7 @@
                 "szak": "1NCs + PTI"
             },
             {
-                "targy": "Számítógép architektúrák"
+                "targy": "Számítógép architektúrák",
                 "idopont": {
                     "nap": "csütörtök",
                     "tol": 10:10,
@@ -68,7 +68,7 @@
                 "szak": "1NPTI"
             },
             {
-                "targy": "Az informatika logikai alapjai"
+                "targy": "Az informatika logikai alapjai",
                 "idopont": {
                     "nap": "csütörtök",
                     "tol": 16:00,
@@ -79,7 +79,7 @@
                 "szak": "1NPTILE"
             },
             {
-                "targy": "Bevezetés az informatikába"
+                "targy": "Bevezetés az informatikába",
                 "idopont": {
                     "nap": "péntek",
                     "tol": 13:30,
