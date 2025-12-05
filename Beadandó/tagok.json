@@ -1,0 +1,29 @@
+{
+    "tagok":
+    [
+        {
+            "nev": "Szendrei Botond",
+            "szolam": "basszus"
+        },
+        {
+            "nev": "Tóth László",
+            "szolam": "basszus"
+        },
+        {
+            "nev": "Kovács Tibor",
+            "szolam": "basszus"
+        },
+        {
+            "nev": "Diósi Ágnes",
+            "szolam": "szoprán"
+        },
+        {
+            "nev": "Korondi Klára",
+            "szolam": "alt"
+        },
+        {
+            "nev": "Szomráki Róbert",
+            "szolam": "tenor"
+        }
+    ]
+}
