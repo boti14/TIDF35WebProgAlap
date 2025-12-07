@@ -12,8 +12,8 @@
         <style>
             .urlap
             {
-                margin-left: 10rem;
-                margin-right:10rem;
+                margin-left: 5rem;
+                margin-right: 5rem;
                 margin-top: 5rem;
                 margin-bottom: 5rem;
                 padding: 2rem;
@@ -50,16 +50,21 @@
                 
             </header>
 
+            <div class="center">
             <section>
+                <br><br>
                 <h1>Jelentkezés kórustagnak</h1>
+                
                 
                 
                 <div class="urlap">
 
+                    
+
                     <form action="jelentkezes.php" target="_self" method="post" name="urlap" id="urlap">
 
                         <label for="nev">Név:
-                            <input type="text" name="nev" id="nev" required pattern="([A-ZÁÉÍÓÖŐÚÜŰa-záéióöőúüű])" title="Írja be a nevét" placeholder="Minta János" autofocus autocomplete="off">
+                            <input type="text" name="nev" id="nev" required pattern="([A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű\s])" title="Írja be a nevét" placeholder="Minta János" autofocus autocomplete="off">
                         </label>
                         <br><br>
 
@@ -86,29 +91,31 @@
                         <br><br>
 
                         <label for="email">Email cím:
-                            <input type="email" name="email" id="email" required pattern="([A-ZÁÉÍÓÖŐÚÜŰa-záéióöőúüű@])" title="Írja be az email címét" placeholder="példa@példa.hu">
+                            <input type="email" name="email" id="email" required pattern="([FILTER_VALIDATE_EMAI])" title="Írja be az email címét" placeholder="példa@példa.hu">
                         </label>
                         <br><br>
 
                         <label for="telefon">Telefonszám:
-                            <input type="tel" name="telefon" id="telefon" required pattern="([1-9]){11}" title="Írja be a telefonszámát" placeholder="06123456789">
+                            <input type="tel" name="telefon" id="telefon" required pattern="(\+|06|0036)[0-9\s]{8,}" title="Írja be a telefonszámát" placeholder="06123456789">
                         </label>
 
                     </form>
                     <br><br>
                     
-                    <div class=""></div>
+                    
                     <input type="submit" value="Űrlap elküldése" form="urlap">
 
                 </div>
             </section>
 
+            </div>
+
         </div>
 
             <footer>
-                <br>
-                <p style="color: white;">SZB, TIDF35, 2025</p>
-                <br>
+                
+                <p>SZB, TIDF35, 2025</p>
+                
             </footer>
 
     </body>

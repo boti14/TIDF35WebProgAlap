@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stilus.css">
+        <title>H.P.K. Galéria</title>
+
+
+        <style>
+            table
+            {
+                
+                border-collapse: collapse;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                background-color: rgba(255, 228, 196, 0.466);
+                
+
+                border-bottom-right-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+
+            }
+
+            .img{
+                display: block;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                width: 350px;
+                
+                box-shadow: inset 0 0 0.1rem rgb(0, 0, 0), 0.15rem 0.15rem 0.15rem 0.15rem black;
+
+            }
+
+            * {
+                box-sizing: border-box;
+                }
+
+                div.gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                }
+
+                div.gallery-item {
+                margin: 5px;
+                border: 5px solid #7e0e0e;
+                width: calc(25% - 20px);
+                }
+
+                div.gallery-item:hover {
+                border: 0.5px solid #ee5a5a;
+                }
+
+                div.gallery-item img {
+                width: 100%;
+                height: auto;
+                }
+
+                div.gallery-item div.desc {
+                padding: 15px;
+                text-align: center;
+                }
+
+                @media only screen and (max-width: 768px) {
+                div.gallery-item {
+                    width: calc(50% - 20px);
+                }
+                }
+
+                @media only screen and (max-width: 480px) {
+                div.gallery-item {
+                    width: calc(100% - 20px);
+                }
+
+                
+            }
+            
+
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+
+            <header>
+                <img class="head" src="source/header-v1.3.1.gif" alt="Fejléc" >
+                
+                <p class="button">
+                    <span class="button"><a href="index.html">Kezdőlap</a></span>
+                    <span class="button"><a href="tortenet.html">Történet</a></span>
+                    <span class="button"><a href="tagok.html">Tagok</a></span>
+                    <span class="button"><a href="galeria.html">Galéria</a></span>
+                    <span class="button"><a href="esemeny.html">Események</a></span>
+                    <span class="button"><a href="jelentkezes.html">Jelentkezés</a></span>
+                    
+                </p>
+                
+                
+                
+                
+            </header>
+            <div class="center">
+            <section>
+                <br><br>
+                <br><br>
+
+
+                <div class="terulet">
+
+                   <div class="gallery">
+
+                    <div class="gallery-item">
+                    <a target="_blank" href="source/korus.jpg">
+                        <img src="source/korus.jpg" alt="Szerencs" width="600" height="400">
+                    </a>
+                    <div class="desc">Szerencs</div>
+                    </div>
+
+                    <div class="gallery-item">
+                    <a target="_blank" href="source/korus2.jpg">
+                        <img src="source/korus2.jpg" alt="Ózd" width="600" height="400">
+                    </a>
+                    <div class="desc">Ózd</div>
+                    </div>
+
+                    <div class="gallery-item">
+                    <a target="_blank" href="source/korus3.JPG">
+                        <img src="source/korus3.JPG" alt="Sátoraljaújhely" width="600" height="400">
+                    </a>
+                    <div class="desc">Sátoraljaújhely</div>
+                    </div>
+
+                    <div class="gallery-item">
+                    <a target="_blank" href="source/korus4.JPG">
+                        <img src="source/miskolc.jpg" alt="Miskolc" width="600" height="400">
+                    </a>
+                    <div class="desc">Miskolc</div>
+                    </div>
+
+                    </div> 
+
+
+
+
+                </div>
+
+                
+                
+                
+            </section>
+            </div>
+
+        </div>
+
+            <br><br>
+
+            <footer>
+                <p>SZB, TIDF35, 2025</p>
+            </footer>
+
+    </body>
+</html>

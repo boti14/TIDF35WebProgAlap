@@ -21,9 +21,9 @@
         $telefon = htmlspecialchars(trim($_POST["telefon"] ?? ""));
 
         $hibak = [];
-        if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű ]$/u", $nev)){$hibak[] = "Hibás a név formátum! Kérlek próbáld meg újra.";}
-        if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű@ ]{}$/u", $email)){$hibak[] = "Hibás az email formátuma! Kérlek próbáld meg újra.";}
-        if (!preg_match("/^[1-9 ]{11,}$/u", $email)){$hibak[] = "Hibás a telefonszám formátuma! Kérlek próbáld meg újra.";}
+        if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű\s]+$/u", $nev)){$hibak[] = "Hibás a név formátum! Kérlek próbáld meg újra.";}
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)){$hibak[] = "Hibás az email formátuma! Kérlek próbáld meg újra.";}
+        if (preg_match("/^(\+|06|0036)[0-9\s]{8,}$/", $telefon)){$hibak[] = "Hibás a telefonszám formátuma! Kérlek próbáld meg újra.";}
 
         if  (count($hibak) > 0)
         {

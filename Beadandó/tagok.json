@@ -1,49 +1,90 @@
 {
-    "tagok":
-    {
-        "szopran":
-        [   
-            {
-                "nev": "Diósi Ágnes",
-                "szolam": "szoprán"
-            }
-        ],
-        
-        "alt":
-        [
-            {
-            "nev": "Korondi Klára",
-            "szolam": "alt"
-            }
-        ],
+  "tagok": {
+    "szopran": [
+      {
+        "nev": "Diósi Ágnes",
+        "szolam": "szoprán"
+      },
+      {
+        "nev": "Erdei Tícia",
+        "szolam": "szoprán"
+      },
+      {
+        "nev": "Róthné Moór Katalin",
+        "szolam": "szoprán"
+      },
+      {
+        "nev": "Juhászné Eperjesi Lilla",
+        "szolam": "szoprán"
+      },
+      {
+        "nev": "Rábai-Juhász Jázmin",
+        "szolam": "szoprán"
+      },
+      {
+        "nev": "Czimbalmos Valéria",
+        "szolam": "szoprán"
+      },
+      {
+        "nev": "Fodor Ildikó",
+        "szolam": "szoprán"
+      }
 
-        "tenor":
-        [
-            {
-            "nev": "Szomráki Róbert",
-            "szolam": "tenor"
-            }
-        ],
-        
-
-        "basszsus":
-        [
-            {
-                "nev": "Szendrei Botond",
-                "szolam": "basszus"
-            },
-            {
-                "nev": "Tóth László",
-                "szolam": "basszus"
-            },
-            {
-                "nev": "Kovács Tibor",
-                "szolam": "basszus"
-            }
-            
-        ]
-    }
-        
-        
-    
+    ],
+    "alt": [
+      {
+        "nev": "Korondi Klára",
+        "szolam": "alt"
+      },
+      {
+        "nev": "Tokárné Paskó Gyöngyi",
+        "szolam": "alt"
+      },
+      {
+        "nev": "Petővári Judit",
+        "szolam": "alt"
+      },
+      {
+        "nev": "Magyar Jánosné",
+        "szolam": "alt"
+      },
+      {
+        "nev": "Kalina Andrea",
+        "szolam": "alt"
+      },
+      {
+        "nev": "Petővári Judit",
+        "szolam": "alt"
+      }
+      
+    ],
+    "tenor": [
+      {
+        "nev": "Szomráki Róbert",
+        "szolam": "tenor"
+      },
+      {
+        "nev": "Kiss Imre",
+        "szolam": "tenor"
+      }
+    ],
+    "basszus": [
+      {
+        "nev": "Szendrei Botond",
+        "szolam": "basszus"
+      },
+      {
+        "nev": "Tóth László",
+        "szolam": "basszus"
+      },
+      {
+        "nev": "Kovács Tibor",
+        "szolam": "basszus"
+      },
+      {
+        "nev": "C László",
+        "szolam": "basszus"
+      }
+    ]
+  }
 }

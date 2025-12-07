@@ -13,27 +13,65 @@
         <style>
             table
             {
-                border: 2px solid black;
+                
+                width: auto;
+                height: auto;
+                margin-top: ;
+                margin-left: auto;
+                margin-right: auto;
+                
                 border-collapse: collapse;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-weight: bold;
                 text-align: center;
                 background-color: rgba(255, 228, 196, 0.466);
+                
 
                 border-bottom-right-radius: 2rem;
                 border-bottom-left-radius: 2rem;
+
+                box-shadow: inset 0 0 0.1rem rgb(0, 0, 0), 0.15rem 0.15rem 0.15rem 0.15rem black;
 
             }
 
             .img{
                 display: block;
-                margin-left: 1.5rem;
-                margin-right: 1.5rem;
-                width: 350px;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                min-width: 100px;
+                max-height: 245px;
                 
                 box-shadow: inset 0 0 0.1rem rgb(0, 0, 0), 0.15rem 0.15rem 0.15rem 0.15rem black;
 
             }
+
+            .wrap
+            {
+                margin-left: 2rem;
+                margin-right: 2rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: auto;
+                
+                border-bottom-right-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                
+            }
+            .wrap > div
+            {
+                
+               
+                background-color: #914a4a;
+                padding: 1rem;
+                color: white;
+                
+
+            
+            }
+            
         </style>
 
     </head>
@@ -59,57 +97,130 @@
                 
             </header>
 
+            <div class="center">
             <section>
                 <br><br>
                 <h1>Üdvözöljük a Hegyalja Pedagógus Kórus oldalán</h1>
+                <h2>Minden szerdán próba a Szerencsi Művelődési Központ és Könyvtárban, a Lovagteremben! <br> Várunk mindenkit szeretettel.</h2>
                 <br><br>
 
                 
 
                 <div class="terulet">
-
+                    
                     <div class="cim">
                         <br>
                         <h1>Hírek</h1>
                         <br>
                     </div>
                     
-                    <table style="width: 450px; height: 520px;">
+                    
+                    <table>
                         <tr>
                             <td>
+                                
+                                <a href="https://www.facebook.com/photo/?fbid=1319122026897523&set=a.471701484972919">
                                 <img class="img" src="source/ujhlye-talalkozo.JPG" alt="">
                                 <br><br>
                                 Kórustalálkozó Sátoraljaújhelyben
                                 <br><br>
-                                
+                                </a>
+                            
                             </td>
                             <td>
+                                <a href="https://www.facebook.com/szerencsihirek/posts/pfbid0uCSJNm563y2L5Q2wu5r2M9g77qarATHGtT1XhgWK8puhmdjjmzaLZmiWdnxNGXZhl">
                                 <img class="img" src="source/korus.jpg" alt="Kórus kép">
                                 <br><br>
                                 55 éves Jubileum
                                 <br><br>
+                                </a>
                                 
                             </td>
                             
                             <td>
+                                <a href="https://www.ozd.hu/2025/10/21/x-felvideki-magyar-korustalalkozo-enekektol-zengett-az-omek-olvaso/">
                                 <img class="img" src="source/ozd.jpg" alt="">
                                 <br><br>
                                 Ózdi Kórustalálkozó
                                 <br><br>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="">
+                                <img class="img" src="source/miskolc.jpg" alt="">
+                                <br><br>
+                                Miskolci fellépés
+                                <br><br>
+                                </a>
                             </td>
 
                         </tr>
 
                     </table>
-
+                    
 
                 </div>
+                    <br><br>
+                
+                
+                    <div class="video">
+                        
+                        <div class="cim">
+                            <br>
+                            <h1>Kórusunk egy fellépése</h1>
+                            <br>
+                        </div>
 
-                
-                
-                
+                        <div class="wrap">
+
+                            <video src="source/hpk.mp4" autoplay="false" controls width="600"></video>
+                    
+                    
+                            <div class="grid">
+                        
+                            <div>
+                                <button id="start">Indítás</button>
+                                <button id="stop">Leállítás</button>
+                            </div>
+
+                            <div>
+                                <button id="startstop">Indítás/Leállítás</button>
+                            </div>
+
+                            <div>
+                                <button id="mute">Néma</button>
+                                <button id="quite">Halk</button>
+                                <button id="loud">Hangos</button>
+                            </div>
+
+                            <div>
+                                <button id="veryslow">Nagyon lassú</button>
+                                <button id="slow">Lassú</button>
+                                <button id="normal">Normál</button>
+                                <button id="fast">Gyors</button>
+                                <button id="veryfast">Nagyon gyors</button>
+                            </div>
+                            <div>
+                                <button id="small">Kicsi</button>
+                                <button id="normalsize">Normál</button>
+                                <button id="big">Nagy</button>
+                            </div>
+
+                            <div>
+                                <button id="hasitended">Befejeződött-e?</button>
+                                <button id="length">Videó hossza (mp)</button>
+                                <button id="currently">Jelenlegi pozíció </button>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <br>
+                </div> 
             </section>
 
+            </div>
 
         </div>
 
