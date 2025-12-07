@@ -1,29 +1,49 @@
 {
     "tagok":
-    [
-        {
-            "nev": "Szendrei Botond",
-            "szolam": "basszus"
-        },
-        {
-            "nev": "Tóth László",
-            "szolam": "basszus"
-        },
-        {
-            "nev": "Kovács Tibor",
-            "szolam": "basszus"
-        },
-        {
-            "nev": "Diósi Ágnes",
-            "szolam": "szoprán"
-        },
-        {
+    {
+        "szopran":
+        [   
+            {
+                "nev": "Diósi Ágnes",
+                "szolam": "szoprán"
+            }
+        ],
+        
+        "alt":
+        [
+            {
             "nev": "Korondi Klára",
             "szolam": "alt"
-        },
-        {
+            }
+        ],
+
+        "tenor":
+        [
+            {
             "nev": "Szomráki Róbert",
             "szolam": "tenor"
-        }
-    ]
+            }
+        ],
+        
+
+        "basszsus":
+        [
+            {
+                "nev": "Szendrei Botond",
+                "szolam": "basszus"
+            },
+            {
+                "nev": "Tóth László",
+                "szolam": "basszus"
+            },
+            {
+                "nev": "Kovács Tibor",
+                "szolam": "basszus"
+            }
+            
+        ]
+    }
+        
+        
+    
 }

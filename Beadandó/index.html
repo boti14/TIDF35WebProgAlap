@@ -10,16 +10,31 @@
         <title>H.P.K. Kezdőlap</title>
 
 
-        <script>
-            function rahuz(pti){
-                pti.style.backgroundColor = "red";
+        <style>
+            table
+            {
+                border: 2px solid black;
+                border-collapse: collapse;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                background-color: rgba(255, 228, 196, 0.466);
+
+                border-bottom-right-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+
             }
 
-            function lehuz(pti){
-                pti.style.backgroundColor = "yellow";
-            }
+            .img{
+                display: block;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                width: 350px;
+                
+                box-shadow: inset 0 0 0.1rem rgb(0, 0, 0), 0.15rem 0.15rem 0.15rem 0.15rem black;
 
-        </script>
+            }
+        </style>
 
     </head>
 
@@ -27,7 +42,7 @@
         <div>
 
             <header>
-                <img class="head" src="source/header-v1.3.gif" alt="Fejléc" >
+                <img class="head" src="source/header-v1.3.1.gif" alt="Fejléc" >
                 
                 <p class="button">
                     <span class="button"><a href="index.html">Kezdőlap</a></span>
@@ -45,41 +60,63 @@
             </header>
 
             <section>
-                <center><h1>Üdvözöljük a Hegyalja Pedagógus Kórus oldalán</h1></center>
+                <br><br>
+                <h1>Üdvözöljük a Hegyalja Pedagógus Kórus oldalán</h1>
+                <br><br>
 
-                <h2>Hírek</h2>
+                
 
-                <table style="border: 1px solid; margin-left: 2rem; margin-right: 2rem; ">
-                    <tr>
-                        <td>
-                            <img class="img" src="source/ujhlye-talalkozo.JPG" alt="">
-                            <p>Kórustalálkozó Sátoraljaújhelyben</p>
-                        </td>
-                        <td>
-                            <img style="width: 300px; align-content: center;" class="img" src="source/korus.jpg" alt="Kórus kép">
+                <div class="terulet">
+
+                    <div class="cim">
+                        <br>
+                        <h1>Hírek</h1>
+                        <br>
+                    </div>
+                    
+                    <table style="width: 450px; height: 520px;">
+                        <tr>
+                            <td>
+                                <img class="img" src="source/ujhlye-talalkozo.JPG" alt="">
+                                <br><br>
+                                Kórustalálkozó Sátoraljaújhelyben
+                                <br><br>
+                                
+                            </td>
+                            <td>
+                                <img class="img" src="source/korus.jpg" alt="Kórus kép">
+                                <br><br>
+                                55 éves Jubileum
+                                <br><br>
+                                
+                            </td>
                             
-                            <p style="align-content: center;">55 éves Jubileum</p>
-                            
-                        </td>
-                        
-                        <td>
-                            <img class="img" src="source/ozd.jpg" alt="">
-                            <p>Ózdi Kórustalálkozó</p>
-                        </td>
+                            <td>
+                                <img class="img" src="source/ozd.jpg" alt="">
+                                <br><br>
+                                Ózdi Kórustalálkozó
+                                <br><br>
+                            </td>
 
-                    </tr>
+                        </tr>
 
-                </table>
+                    </table>
+
+
+                </div>
 
                 
                 
                 
             </section>
 
+
         </div>
 
+            <br><br>
+
             <footer>
-                <P>SZB, TIDF35, 2025</P>
+                <p>SZB, TIDF35, 2025</p>
             </footer>
 
     </body>
