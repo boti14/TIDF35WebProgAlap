@@ -24,6 +24,8 @@
                 border-radius: 0.5rem;
                 box-shadow: inset 0 0 0.1rem rgb(0, 0, 0), 0.15rem 0.15rem 0.15rem 0.15rem black;
             }
+
+            
         </style>
 
     </head>
@@ -33,7 +35,7 @@
         <div>
 
             <header>
-               <img class="head" src="source/header-v1.3.1.gif" alt="Fejléc" >
+               <a href="index.html"><img class="head" src="source/header-v1.3.1.gif" alt="Fejléc" ></a>
                 
                 <p class="button">
                     <span class="button"><a href="index.html">Kezdőlap</a></span>
@@ -64,7 +66,7 @@
                     <form action="jelentkezes.php" target="_self" method="post" name="urlap" id="urlap">
 
                         <label for="nev">Név:
-                            <input type="text" name="nev" id="nev" required pattern="([A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű\s])" title="Írja be a nevét" placeholder="Minta János" autofocus autocomplete="off">
+                            <input type="text" name="nev" id="nev" required pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéíóöőúüű \s]){4,}" title="Írja be a nevét" placeholder="Minta János" autofocus autocomplete="off">
                         </label>
                         <br><br>
 
@@ -80,8 +82,8 @@
                         <br><br>
 
                         <label for="szolam">Szólam:
-                            <input list="szolam" id="szolam" name="szolam" title="Válassza ki az önhözz legjobban illő szólamot" placeholder="Szólamválasztó">
-                            <datalist>
+                            <input list="szolam_list" id="szolam" name="szolam" title="Válassza ki az önhözz legjobban illő szólamot" placeholder="Szólamválasztó">
+                            <datalist id="szolam_list">
                                 <option value="szoprán">Szoprán</option>
                                 <option value="alt">Alt</option>
                                 <option value="tenor">Tenor</option>
@@ -91,7 +93,9 @@
                         <br><br>
 
                         <label for="email">Email cím:
-                            <input type="email" name="email" id="email" required pattern="([FILTER_VALIDATE_EMAI])" title="Írja be az email címét" placeholder="példa@példa.hu">
+                            <input type="email" name="email" id="email" required
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                            title="Írja be az email címét" placeholder="példa@példa.hu">
                         </label>
                         <br><br>
 

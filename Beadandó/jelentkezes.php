@@ -21,9 +21,9 @@
         $telefon = htmlspecialchars(trim($_POST["telefon"] ?? ""));
 
         $hibak = [];
-        if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű\s]+$/u", $nev)){$hibak[] = "Hibás a név formátum! Kérlek próbáld meg újra.";}
+        //if (!preg_match("/^[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű\s]+$/u", $nev)){$hibak[] = "Hibás a név formátum! Kérlek próbáld meg újra.";}
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)){$hibak[] = "Hibás az email formátuma! Kérlek próbáld meg újra.";}
-        if (preg_match("/^(\+|06|0036)[0-9\s]{8,}$/", $telefon)){$hibak[] = "Hibás a telefonszám formátuma! Kérlek próbáld meg újra.";}
+        if (!preg_match("/^(\+|06|0036)[0-9\s]{8,}$/", $telefon)){$hibak[] = "Hibás a telefonszám formátuma! Kérlek próbáld meg újra.";}
 
         if  (count($hibak) > 0)
         {
@@ -58,7 +58,7 @@
             if (file_put_contents($fajl, $sor, FILE_APPEND | LOCK_EX)) {
                 echo "<p class='success'>✅Az adatokat sikeresen rögzítettük a <strong> $fajl </strong> fájlba.</p>";
             } else {
-                echo "<p class='error'>🔺 Hiba történt az adatok ögzítésekor!</p>";
+                echo "<p class='error'>🔺 Hiba történt az adatok rögzítésekor!</p>";
             }
         }
     }
